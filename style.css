@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500&display=swap');
+
+@font-face {
+    font-family: 'Poppins-light';
+    src: url(../Asset/Fonts/Poppins-Thin.ttf);
+    font-weight: normal;
+ }
+
+ @font-face {
+    font-family: 'Poppins-reg';
+    src: url(../Asset/Fonts/Poppins-Regular.ttf);
+ }
+
+ *{
+    font-family: 'Poppins', sans-serif;
+ }
+
+#image-logo{
+    max-width: 30px;
+    height: auto;
+}
+
+#image-profile{
+   aspect-ratio: 16/15;
+   object-fit: cover;
+   border-radius: 20px;
+}
+
+.profile-text{
+   color:white;
+   transition: 0.5s;
+}
+
+.profile-text:hover{
+   color: rgb(117, 117, 117);
+   transition: 0.5s;
+}
+
+.contact-pic{
+   max-width: 30px;
+}
+
+#line{
+   border:1px solid white;
+   width:80%;   
+}
+
+#image-logo:hover{
+   opacity: 80%;
+}
+
+#nav-link-item{
+   font-size: 1.1vw;
+   color: rgb(193, 193, 193);
+   text-decoration: none;
+}
+
+ #nav-link-item:hover{
+    color: rgb(247, 247, 247);
+ }
+
+.img-project{
+   aspect-ratio: 16/7;
+   object-fit: scale-down;
+}
+
+#navNavbar{
+   margin-inline: 5vw; margin-top:2vw;
+   position: fixed;
+   width: 90%;
+}
+
+/* GANTI NAVBAR */
+.burger-menu{
+   position: sticky;
+   display: none;
+   top: 0;
+}
+
+.burger-menu img{
+   max-width: 15%;
+}
+
+.burger-menu .container-sidebar{
+   background-color: rgb(44, 44, 44);
+   padding: 40px;
+   border-radius: 30px;
+   position: fixed;
+   display: none;
+   margin-top: 100px;
+}
+
+.burger-menu .container-sidebar a{
+   display: flex;
+   flex-direction: column;
+   text-decoration: none;
+   color: white;
+   font-weight: bold;
+   padding: 15px 0;
+}
+
+.burger-menu .container-sidebar a:hover{
+   color: #d5d5d5;
+}
+
+@media screen and (max-width: 768px) {
+   /* PENGGANTI NAVBAR */
+   #navNavbar{
+      display: none;
+   }
+
+   /* BURGER MENU */
+   .burger-menu{
+      position: sticky;
+      padding: 3vh 2vh;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      /* top: 0; */
+  }
+
+  .burger-menu img{
+      max-width: 80px;
+  }  
+  
+  .burger-menu img{
+      cursor: pointer;
+  } 
+}
+
+/* 
+ #project-link{
+   color: rgb(51, 87, 157);
+ }
+
+ #project-link:hover{
+   color: rgb(211, 211, 211);
+ } */
