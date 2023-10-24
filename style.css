@@ -64,6 +64,14 @@
    object-fit: scale-down;
 }
 
+.img-achievement{
+   aspect-ratio: 16/9;
+   height: auto;
+   width: 60%;
+   border-radius:20px;
+
+}
+
 #navNavbar{
    margin-inline: 5vw; margin-top:2vw;
    position: fixed;
@@ -103,6 +111,11 @@
    color: #d5d5d5;
 }
 
+.twidth{
+   width: 80%;
+}
+
+
 @media screen and (max-width: 768px) {
    /* PENGGANTI NAVBAR */
    #navNavbar{
@@ -126,6 +139,10 @@
   .burger-menu img{
       cursor: pointer;
   } 
+
+  .img-achievement{
+   width: 100%;
+  }
 }
 
 /* 
